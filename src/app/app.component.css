@@ -1,0 +1,29 @@
+.card-grid {
+  width: 700px;
+  height: 220px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+}
+
+.card .card-back {
+  flex: 1;
+  background-color: #636363;
+}
+
+.card .card-front {
+  position: absolute;
+}
+
+@media only screen and (max-width: 720px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 200px;
+    height: 700px;
+  }
+}
